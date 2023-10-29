@@ -1,6 +1,6 @@
 CC = g++
 flags = -Wundef -Werror -Wall
-exec = a
+exec = calculadora
 
 $(exec): main.o bin/abbNode.o bin/abb.o bin/node.o bin/stack.o
 	$(CC) $(flags) main.o bin/abbNode.o bin/abb.o bin/node.o bin/stack.o -o $(exec)
